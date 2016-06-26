@@ -1,15 +1,10 @@
 # Cloud Foundry Python Buildpack
-[![CF Slack](https://s3.amazonaws.com/buildpacks-assets/buildpacks-slack.svg)](http://slack.cloudfoundry.org)
 
-A Cloud Foundry [buildpack](http://docs.cloudfoundry.org/buildpacks/) for Python based apps.
+A Cloud Foundry [buildpack](http://docs.cloudfoundry.org/buildpacks/) for Python based apps with SciPy/NumPy support.
 
-This is based on the [Heroku buildpack] (https://github.com/heroku/heroku-buildpack-python).
+**This buildpack incorporates SciPy support implemented in [Heroku SciPy buildpack](https://github.com/thenovices/heroku-buildpack-scipy) to standard [Cloudfoundry Python buildpack](https://github.com/cloudfoundry/python-buildpack). See [Heroku SciPy buildpack](https://github.com/thenovices/heroku-buildpack-scipy) README for details how to use it and which versions of SciPy/NumPy are supported.**
 
 This buildpack supports running Django and Flask apps.
-
-## Using the Buildpack
-
-For information on deploying Python applications visit [CloudFoundry.org](http://docs.cloudfoundry.org/buildpacks/python/index.html).
 
 # Building the Buildpack
 
@@ -51,18 +46,3 @@ BUNDLE_GEMFILE=cf.Gemfile bundle exec buildpack-build
 
 More options can be found on Machete's [Github page.](https://github.com/cloudfoundry/machete)
 
-## Contributing
-
-Find our guidelines [here](./CONTRIBUTING.md).
-
-## Help and Support
-
-Join the #buildpacks channel in our [Slack community] (http://slack.cloudfoundry.org/) if you need any further assistance.
-
-## Reporting Issues
-
-Open a GitHub issue on this project [here](https://github.com/cloudfoundry/python-buildpack/issues/new)
-
-## Active Development
-
-The project backlog is on [Pivotal Tracker](https://www.pivotaltracker.com/projects/1042066)
